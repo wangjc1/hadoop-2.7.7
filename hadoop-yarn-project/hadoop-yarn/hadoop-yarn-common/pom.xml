@@ -263,7 +263,7 @@
                   <include>yarn_security_token.proto</include>
                 </includes>
               </source>
-              <output>${basedir}/src/main/java</output>
+              <output>${user.dir}/hadoop-protoc/src/main/java</output>
             </configuration>
           </execution>
 

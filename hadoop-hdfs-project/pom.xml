@@ -37,6 +37,14 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <module>hadoop-hdfs-nfs</module>
   </modules>
 
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.hadoop</groupId>
+      <artifactId>hadoop-protoc</artifactId>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
   <build>
     <plugins>
       <plugin>

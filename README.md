@@ -74,10 +74,11 @@ Windows系统下，如果想要整体编译，那么需要安装以下组件
   这样用IDEA等工具查看源码时，protoc代码肯定是找不见的，所以需要修改下pom.xml文件中
   源码输出路径，不知道那些Hadoop项目组的大神们平时是怎么开发的     
     
+    我是专门用个工程来存放protoc序列化生成的代码，然后用到protoc序列化的工程引入这个工程
     将这种路径
     <output>${project.build.directory}/generated-sources/java</output>
     改成
-    <output>${basedir}/src/main/java</output>
+    <output>${user.dir}/hadoop-protoc/src/main/java</output>
 
 ### 编译 ### 
      mvn clean package -Dmaven.test.skip=true  -X  

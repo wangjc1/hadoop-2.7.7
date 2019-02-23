@@ -290,6 +290,11 @@
       <artifactId>bcprov-jdk16</artifactId>
       <scope>test</scope>
     </dependency>
+
+    <dependency>
+      <groupId>org.apache.hadoop</groupId>
+      <artifactId>hadoop-protoc</artifactId>
+    </dependency>
   </dependencies>
 
   <build>
@@ -367,7 +372,7 @@
                   <include>GenericRefreshProtocol.proto</include>
                 </includes>
               </source>
-              <output>${basedir}/src/main/java</output>
+              <output>${user.dir}/hadoop-protoc/src/main/java</output>
             </configuration>
           </execution>
           <execution>
@@ -389,7 +394,7 @@
                   <include>test_rpc_service.proto</include>
                 </includes>
               </source>
-              <output>${project.build.directory}/generated-test-sources/java</output>
+              <output>${user.dir}/hadoop-protoc/src/main/java</output>
             </configuration>
           </execution>
         </executions>
