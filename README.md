@@ -199,3 +199,7 @@ https://mirrors.tuna.tsinghua.edu.cn/apache/hadoop/common
  
 ![p1](doc/img/hadoop01.png)
  
+
+## 三. 集群安装 ###
+https://blog.csdn.net/hyx1990/article/details/51448514
+https://www.cnblogs.com/julyme/p/5196797.html
