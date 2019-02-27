@@ -201,5 +201,8 @@ https://mirrors.tuna.tsinghua.edu.cn/apache/hadoop/common
  
 
 ## 三. 集群安装 ###
-https://blog.csdn.net/hyx1990/article/details/51448514
-https://www.cnblogs.com/julyme/p/5196797.html
+`   
+   https://blog.csdn.net/hyx1990/article/details/51448514
+   https://www.cnblogs.com/julyme/p/5196797.html
+   https://www.cnblogs.com/runnerjack/p/7454968.html
+`
