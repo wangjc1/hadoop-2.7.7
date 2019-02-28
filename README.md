@@ -206,3 +206,25 @@ https://mirrors.tuna.tsinghua.edu.cn/apache/hadoop/common
    https://www.cnblogs.com/julyme/p/5196797.html
    https://www.cnblogs.com/runnerjack/p/7454968.html
 `
+
+切换用户时 .bash_profile中配置的环境变量不生效，切换用户时需要在su后面加“-”
+su hadoop   //不生效
+su - hadoop //生效
+
+Ubuntu系统中和centos好多地方都有区别
+vi命令快捷键不一样
+配置环境变量不一样，乌班图是 ${JAVA_HOME}/bin:${PATH}，而centos中是$JAVA_HOME/bin:${PATH}
+
+关闭防火墙
+乌班图： 
+ufw enable
+ufw disable
+ufw status
+
+centos： 
+systemctl start firewalld.service #运行firewall
+systemctl stop firewalld.service #停止firewall
+systemctl disable firewalld.service #禁止firewall开机启动
+systemctl enable firewalld.service  #启用
+firewall-cmd --state #查看默认防火墙状态（关闭后显示notrunning，开启后显示running）
+ 
